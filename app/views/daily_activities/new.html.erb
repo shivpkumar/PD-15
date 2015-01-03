@@ -1,0 +1,18 @@
+<%= semantic_form_for DailyActivity.new do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :workout, label: 'Workout for 45 minutes' %>
+    <%= f.input :work_by_nine_thirty, label: 'Get to work by 9:30' %>
+    <%= f.input :eat_healthy, label: 'Eat healthy' %>
+    <%= f.input :one_beer_max, label: '1 beer max' %>
+    <%= f.input :no_smoking, label: 'No smoking' %>
+    <%= f.input :meet_up_with_friend, label: "Meet up with someone you haven't seen in a while" %>
+    <%= f.input :show_or_meetup, label: 'Go to a small show or tech meetup' %>
+    <%= f.input :read_a_book, label: 'Read a book (or listen to an audiobook' %>
+    <%= f.input :no_frustration, label: "Don't get frustrated -- stay positive" %>
+    <%= f.input :organize_or_clean, label: 'Organize or clean something' %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :button %>
+  <% end %>
+<% end %>

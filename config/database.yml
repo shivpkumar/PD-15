@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  port: 5432
+
+development:
+  <<: *default
+  database: pd15_development
+
+test:
+  <<: *default
+  database: pd15_test
+
+production:
+  <<: *default
+  database: pd15_production
