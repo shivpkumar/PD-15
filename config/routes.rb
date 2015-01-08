@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'shiv_activities#new'
+  root 'home#index'
 
-  resource :shiv_activities
+  resource :shiv_activities, only: [:new, :create], path: '/shiv'
+  get '/shiv' => 'shiv_activities#new'
 end
