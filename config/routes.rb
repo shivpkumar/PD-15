@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'daily_activities#new'
+  root 'shiv_activities#new'
 
-  resource :daily_activities
+  resource :shiv_activities
 end

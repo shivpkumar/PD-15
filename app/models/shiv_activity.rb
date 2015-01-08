@@ -1,0 +1,1 @@
+class ShivActivity < ActiveRecord::Base; end
