@@ -3,7 +3,7 @@ class ShivActivitiesController < ApplicationController
 
   def create
     daily_activity = ShivActivity.where(created_at: Date.today).first_or_create
-    daily_activity.update_attributes(params[:daily_activity].permit!)
-    redirect_to root_path
+    daily_activity.update_attributes(params[:shiv_activity].permit!)
+    redirect_to shiv_path
   end
 end
