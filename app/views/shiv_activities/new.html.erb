@@ -1,4 +1,4 @@
-<%= semantic_form_for ShivActivity.new do |f| %>
+<%= semantic_form_for @shiv_activity, url: shiv_activities_path do |f| %>
   <%= f.inputs do %>
     <%= f.input :workout, label: 'Workout for 45 minutes' %>
     <%= f.input :work_by_nine_thirty, label: 'Get to work by 9:30' %>

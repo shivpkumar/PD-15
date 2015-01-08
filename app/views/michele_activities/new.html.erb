@@ -1,4 +1,4 @@
-<%= semantic_form_for MicheleActivity.new do |f| %>
+<%= semantic_form_for @michele_activity, url: michele_activities_path do |f| %>
   <%= f.inputs do %>
     <%= f.input :exercise_or_stretch, label: 'Exercise/stretch' %>
     <%= f.input :eat_smaller_portions, label: 'Eat smaller portions' %>

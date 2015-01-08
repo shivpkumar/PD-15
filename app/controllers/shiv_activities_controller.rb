@@ -1,9 +1,13 @@
 class ShivActivitiesController < ApplicationController
-  def new; end
+  def new
+    @shiv_activity = ShivActivity.where(created_at: Date.today).first_or_initialize
+  end
 
   def create
-    daily_activity = ShivActivity.where(created_at: Date.today).first_or_create
-    daily_activity.update_attributes(params[:shiv_activity].permit!)
+    shiv_activity = ShivActivity.where(created_at: Date.today).first_or_create
+    shiv_activity.update_attributes(params[:shiv_activity].permit!)
     redirect_to shiv_path
   end
+
+  alias_method :update, :create
 end
