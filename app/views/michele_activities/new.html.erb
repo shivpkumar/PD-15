@@ -1,0 +1,15 @@
+<%= semantic_form_for MicheleActivity.new do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :exercise_or_stretch, label: 'Exercise/stretch' %>
+    <%= f.input :eat_smaller_portions, label: 'Eat smaller portions' %>
+    <%= f.input :learn_new_thing, label: 'Learn 1 new thing' %>
+    <%= f.input :help_or_inspire_someone, label: 'Help or inspire someone else' %>
+    <%= f.input :dont_assume, label: "Don't assume" %>
+    <%= f.input :make_something, label: "Make something" %>
+    <%= f.input :get_to_know_someone, label: 'Get to know someone better/new' %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :button %>
+  <% end %>
+<% end %>

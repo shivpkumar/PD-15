@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150108052548) do
+ActiveRecord::Schema.define(version: 20150108053140) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "michele_activities", force: true do |t|
+    t.boolean  "exercise_or_stretch"
+    t.boolean  "eat_smaller_portions"
+    t.boolean  "learn_new_thing"
+    t.boolean  "help_or_inspire_someone"
+    t.boolean  "dont_assume"
+    t.boolean  "make_something"
+    t.boolean  "get_to_know_someone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "shiv_activities", force: true do |t|
     t.boolean  "workout"
