@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150108053140) do
+ActiveRecord::Schema.define(version: 20150108070244) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 20150108053140) do
     t.boolean  "eat_healthy"
     t.boolean  "one_beer_max"
     t.boolean  "no_smoking"
-    t.boolean  "meet_up_with_friend"
-    t.boolean  "show_or_meetup"
+    t.boolean  "meet_up_with_friend_or_show"
+    t.boolean  "side_project_or_meetup"
     t.boolean  "read_a_book"
     t.boolean  "no_frustration"
     t.boolean  "organize_or_clean"
