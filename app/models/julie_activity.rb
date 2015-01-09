@@ -1,0 +1,1 @@
+class JulieActivity < ActiveRecord::Base; end

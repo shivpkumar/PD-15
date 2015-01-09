@@ -1,0 +1,18 @@
+<%= semantic_form_for @julie_activity, url: julie_activities_path do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :six_hours_sleep, label: 'Get >6 hours of sleep' %>
+    <%= f.input :smoothie_or_egg, label: 'Make a smoothie in the morning for breakfast or eat a boiled egg' %>
+    <%= f.input :bread_for_week, label: 'Make your bread for the week' %>
+    <%= f.input :walk_one_hour, label: 'Walk for 1 hour' %>
+    <%= f.input :call_family, label: 'Call someone in your family' %>
+    <%= f.input :friend_outing, label: 'Schedule an outing with a friend each week' %>
+    <%= f.input :plan_vacation, label: 'Plan a vacation 3-6 months from now' %>
+    <%= f.input :use_public_trans, label: "Use public transportation (aka don't drive)" %>
+    <%= f.input :read_on_phone_or_comp, label: 'Read vs. play on phone/computer' %>
+    <%= f.input :stretch_before_bed, label: 'Stretch before bed' %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :button %>
+  <% end %>
+<% end %>
